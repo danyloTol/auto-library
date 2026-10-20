@@ -1,0 +1,12 @@
+**/.git
+**/.vs
+**/.vscode
+**/bin
+**/obj
+**/node_modules
+**/dist
+backend/src/WebApi/wwwroot/uploads/*
+!backend/src/WebApi/wwwroot/uploads/.gitkeep
+.env
+.env.*
+!.env.example

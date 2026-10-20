@@ -1,0 +1,33 @@
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+appsettings.Development.json
+appsettings.*.local.json
+
+# .NET build and user artifacts
+bin/
+obj/
+*.user
+*.userosscache
+*.suo
+*.userprefs
+.vs/
+.idea/
+.vscode/
+
+# Node & Frontend
+node_modules/
+dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Uploaded media files (user uploads)
+backend/src/WebApi/wwwroot/uploads/*
+!backend/src/WebApi/wwwroot/uploads/.gitkeep
+
+# OS generated files
+.DS_Store
+Thumbs.db

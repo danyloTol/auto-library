@@ -1,0 +1,16 @@
+services:
+  autolibrary:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ConnectionStrings__DefaultConnection=${ConnectionStrings__DefaultConnection}
+      - Jwt__Key=${Jwt__Key:-super_secret_car_library_key_2026_very_long_and_safe_jwt_token_secret_key_12345!}
+    volumes:
+      - autolibrary_uploads:/app/wwwroot/uploads
+
+volumes:
+  autolibrary_uploads:
